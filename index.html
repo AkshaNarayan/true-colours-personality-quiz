@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>True Personality Quiz</title>
+
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+      table {
+        width: 50%;
+      }
+
+      table,
+      td {
+        padding-bottom: 20px;
+        margin-left: 20px;
+        padding-top: 20px;
+      }
+    </style>
+    <script>
+       function calculateResult(){
+           var orange = 0;
+           var blue = 0;
+           var gold= 0;
+           var green = 0;
+
+           orange = Number(document.getElementById("A").value) + Number(document.getElementById("H").value) + Number(document.getElementById("K").value) + Number(document.getElementById("N").value)  +Number(document.getElementById("S").value) ;
+           blue =  Number(document.getElementById("C").value) + Number(document.getElementById("F").value) + Number(document.getElementById("J").value) + Number(document.getElementById("O").value)  +Number(document.getElementById("R").value) ;
+           gold =  Number(document.getElementById("B").value) + Number(document.getElementById("G").value) + Number(document.getElementById("I").value) + Number(document.getElementById("M").value)  +Number(document.getElementById("T").value) ;
+           green =  Number(document.getElementById("D").value) + Number(document.getElementById("E").value) + Number(document.getElementById("L").value) + Number(document.getElementById("P").value)  +Number(document.getElementById("Q").value) ;
+
+        console.log("hiii", green, orange, blue, gold);
+        var string = "Your score is:\n\nGold: " + gold + "\nGreen: " + green+ "\nBlue: " + blue + "\nOrange: "+ orange; 
+        alert(string)
+           
+       }
+    </script>
+  </head>
+
+  <body>
+     <h3>&nbsp; &nbsp; Rank every row's cells from 1-4, 4 being the most relatable and 1 being least.</h3> 
+    <table>
+      <tr>
+        <td>
+          Active <br />
+          Variety <br />
+          Sports<br />
+          Opportunities<br />
+          Spontaneous<br />
+          Flexible <br /><br />
+
+          A: <input type="number" min="1" max="4" id="A" />
+        </td>
+
+        <td>
+          Organized<br />
+          Planned<br />
+          Neat<br />
+          Parental<br />
+          Traditional<br />
+          Responsible<br /><br />
+
+          B: <input type="number" min="1" max="4" id="B" />
+        </td>
+
+        <td>
+          Warm<br />
+          Helpful<br />
+          Friends<br />
+          Authentic<br />
+          Harmonious<br />
+          Compassionate<br />
+          <br />
+
+          C: <input type="number" min="1" max="4" id="C" />
+        </td>
+
+        <td>
+          Learning<br />
+          Science<br />
+          Quiet<br />
+          Versatile<br />
+          Inventive<br />
+          Competent<br />
+
+          <br />
+
+          D: <input type="number" min="1" max="4" id="D" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Curious<br />
+          Ideas<br />
+          Questions<br />
+          Conceptual<br />
+          Knowledge<br />
+          Problem Solver<br />
+
+          <br />
+
+          E: <input type="number" min="1" max="4" id="E" />
+        </td>
+
+        <td>
+          Caring<br />
+          People Oriented<br />
+          Feelings<br />
+          Unique<br />
+          Empathetic<br />
+          Communicative<br />
+
+          <br />
+
+          F: <input type="number" min="1" max="4" id="F" />
+        </td>
+
+        <td>
+          Orderly<br />
+          On-time<br />
+          Honest<br />
+          Stable<br />
+          Sensible<br />
+          Dependable<br />
+          <br />
+
+          G: <input type="number" min="1" max="4" id="G" />
+        </td>
+
+        <td>
+          Action<br />
+          Challenges<br />
+          Competitive<br />
+          Impetuous<br />
+          Impactful<br />
+
+          <br />
+
+          H: <input type="number" min="1" max="4" id="H" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Helpful<br />
+          Trustworthy<br />
+          Dependable<br />
+          Loyal<br />
+          Conservative<br />
+          Organized<br />
+
+          <br />
+
+          I: <input type="number" min="1" max="4" id="I" />
+        </td>
+
+        <td>
+          Kind<br />
+          Understanding<br />
+          Giving<br />
+          Devoted<br />
+          Warm<br />
+          Poetic<br />
+
+          <br />
+
+          J: <input type="number" min="1" max="4" id="J" />
+        </td>
+
+        <td>
+          Playful<br />
+          Quick<br />
+          Adventurous<br />
+          Confrontive<br />
+          Open Minded<br />
+          Independent<br />
+
+          <br />
+
+          K: <input type="number" min="1" max="4" id="K" />
+        </td>
+
+        <td>
+          Independent<br />
+          Exploring<br />
+          Competent<br />
+          Theoretical<br />
+          Why Questions<br />
+          Ingenious<br />
+
+          <br />
+
+          L: <input type="number" min="1" max="4" id="L" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Follow Rules<br />
+          Useful<br />
+          Save Money<br />
+          Concerned<br />
+          Procedural<br />
+          Cooperative<br />
+
+          <br />
+
+          M: <input type="number" min="1" max="4" id="M" />
+        </td>
+
+        <td>
+          Active<br />
+          Free<br />
+          Winning<br />
+          Daring<br />
+          Impulsive<br />
+          Risk Taker<br />
+
+          <br />
+
+          N: <input type="number" min="1" max="4" id="N" />
+        </td>
+
+        <td>
+          Sharing<br />
+          Getting Along<br />
+          Feelings<br />
+          Tender<br />
+          Inspirational<br />
+          Dramatic<br />
+
+          <br />
+
+          O: <input type="number" min="1" max="4" id="O" />
+        </td>
+
+        <td>
+          Thinking<br />
+          Solving Problems<br />
+          Perfectionist<br />
+          Determined<br />
+          Complex<br />
+          Composed<br />
+
+          <br />
+
+          P: <input type="number" min="1" max="4" id="P" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Puzzles<br />
+          Seeking Info<br />
+          Making Sense<br />
+          Philosophical<br />
+          Principled<br />
+          Rational<br />
+
+          <br />
+
+          Q: <input type="number" min="1" max="4" id="Q" />
+        </td>
+
+        <td>
+          Social Causes<br />
+          Easy Going<br />
+          Happy Endings<br />
+          Approachable<br />
+          Affectionate<br />
+          Sympathetic<br />
+
+          <br />
+
+          R: <input type="number" min="1" max="4" id="R" />
+        </td>
+
+        <td>
+          Exciting<br />
+          Lively<br />
+          Hands On<br />
+          Courageous<br />
+          Skillful<br />
+          On Stage<br />
+
+          <br />
+
+          BS <input type="number" min="1" max="4" id="S" />
+        </td>
+
+        <td>
+          Pride<br />
+          Tradition<br />
+          Do Things Right<br />
+          Orderly<br />
+          Conventional<br />
+          Careful<br />
+
+          <br />
+
+          T: <input type="number" min="1" max="4" id="T" />
+        </td>
+      </tr>
+    </table>
+
+    <br />
+    <br />
+    <button style="margin-left: 20%; padding: 2%" onclick="calculateResult()">
+      Get my result
+    </button>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+  </body>
+</html>
